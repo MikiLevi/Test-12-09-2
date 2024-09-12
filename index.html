@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div id="title">
+            <h2>BATTALION FORCE MANAGEMENT</h2>
+        </div>
+    </header>
+    <main>
+        <div id="border">
+            <div class="input-au">
+                <input id="name" name="text" placeholder="Full Name" class="input-box">
+                <input id="rank" name="text" placeholder="Rank" class="input-box">
+                <input id="position" name="text" placeholder="Position" class="input-box">
+                <input id="platoon" name="text" placeholder="Platoon" class="input-box">
+                <input id="mission" name="text" placeholder="Mission Time" class="input-box">
+                <select id="select" class="input-box">
+                    <option value="">Active</option>
+                    <option value="">Reserve</option>
+                    <option value="">Retired</option>
+                </select>
+                <button id="add-person" class="input-box" onclick="add()">Add Personnal</button>
+            </div>
+        </div>
+        <div id="h4">
+            <h4>FORCES OVERVIEW</h4>
+        </div>
+        <div class="table-all">
+            <table border="1" class="table">
+                <thead id="thead">
+                    <tr>
+                        <th>FULL NAME</th>
+                        <th>RANK</th>
+                        <th>POSITION</th>
+                        <th>PLATOON</th>
+                        <th>MISSION TIME</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <footer></footer>
+    <script defer src="./script.js"></script>
 </body>
+
 </html>
